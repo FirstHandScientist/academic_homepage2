@@ -1,0 +1,66 @@
+<ngb-tabset justify="fill">
+	<ngb-tab title="Main">
+		<ng-template ngbTabContent>
+
+			<div class="card-body">
+
+				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+
+		</ng-template>
+	</ngb-tab>
+
+	<ngb-tab title="Topic 1">
+		<ng-template ngbTabContent>
+
+			<div class="card-body">
+
+				<h3 class="card-title">Research topic 1</h3>
+
+				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, [{{cite('conf1', 0)}}]
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non [{{cite('conf1', 0)}}]
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum [{{cite('art1', 0)}}].</p>
+
+				<ul class="list-group">
+					<li class="list-group-item p-2" *ngFor="let pub_data of ref_lists[0]; let i=index">
+						[{{i+1}}]<app-publication [pub_data]="pub_data"></app-publication>
+					</li>
+				</ul>
+			</div>
+		</ng-template>
+	</ngb-tab>
+
+	<ngb-tab title="Topic 2">
+		<ng-template ngbTabContent>
+
+			<div class="card-body">
+
+				<h3 class="card-title">Research topic 2</h3>
+
+				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, [{{cite('conf2', 0)}}]
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non [{{cite('conf2', 0)}}]
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum [{{cite('art2', 0)}}].</p>
+
+				<ul class="list-group">
+					<li class="list-group-item p-2" *ngFor="let pub_data of ref_lists[1]; let i=index">
+						[{{i+1}}]<app-publication [pub_data]="pub_data"></app-publication>
+					</li>
+				</ul>
+			</div>
+		</ng-template>
+	</ngb-tab>
+
+
+</ngb-tabset>

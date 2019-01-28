@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light shadow-sm">
+  <div class="container-fluid mx-auto">
+    
+    <a class="navbar-brand p-0" routerLink="">
+      Petter Nilsson
+    </a>
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" aria-controls="collapseToggler" [attr.aria-expanded]="!isCollapsed" aria-label="Toggle navigation" (click)="toggleMenu()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapseToggler" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-1" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link" routerLink="">
+            <fa-icon [icon]="faHome" size="lg"></fa-icon> Home
+          </a>
+        </li>
+        <li class="nav-item mx-1" routerLinkActive="active">
+          <a class="nav-link" routerLink="biography">
+            <fa-icon [icon]="faUser" size="lg"></fa-icon> Bio
+          </a>
+        </li>
+        <li class="nav-item mx-1" routerLinkActive="active">
+          <a class="nav-link" routerLink="research">
+            <fa-icon [icon]="faPuzzlePiece" size="lg"></fa-icon> Research
+          </a>
+        </li>
+        <li class="nav-item mx-1" routerLinkActive="active">
+          <a class="nav-link" routerLink="publications">
+            <fa-icon [icon]="faFile" size="lg"></fa-icon> Publications
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
+
+<div class="container-fluid mx-auto pt-3">
+  <router-outlet></router-outlet>
+</div>

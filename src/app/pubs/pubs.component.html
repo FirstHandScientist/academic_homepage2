@@ -1,0 +1,56 @@
+<div class="row">
+  <div class=col-sm-8>
+    <h2>List of publications</h2>
+  </div>
+  <div class="col-sm-4">
+    <input [(ngModel)]="filter_text" type="text" class="form-control" placeholder="Search...">
+  </div>
+</div>
+
+<span *ngIf="(articles | filteredPipe: filter_text).length">
+
+  <h3 class="mt-2">Journal Papers</h3>
+  <ul class="list-group">
+    <li *ngFor="let pub_data of (articles | filteredPipe: filter_text)" class="list-group-item publist_row p-2" [class.pub_active]="pub_data.EntryKey == routeFragment">
+      <fa-icon [icon]="faScroll"></fa-icon>
+      <app-publication [pub_data]="pub_data" [show_more]="pub_data.EntryKey == routeFragment"></app-publication>
+    </li>
+  </ul>
+
+<span *ngIf="(conference | filteredPipe: filter_text).length">
+
+  <h3 class="mt-2">Peer-Reviewed Conference Proceedings</h3>
+  <ul class="list-group">
+    <li class="list-group-item publist_row p-2" *ngFor="let pub_data of (conference | filteredPipe: filter_text)" [class.pub_active]="pub_data.EntryKey == routeFragment">
+      <fa-icon [icon]="faFileAlt"></fa-icon>
+      <app-publication [pub_data]="pub_data" [show_more]="pub_data.EntryKey == routeFragment"></app-publication>
+    </li>
+  </ul>
+
+</span>
+
+<span *ngIf="(chapters | filteredPipe: filter_text).length">
+
+  <h3 class="mt-2">Book Chapters</h3>
+  <ul class="list-group">
+    <li class="list-group-item publist_row p-2" *ngFor="let pub_data of (chapters | filteredPipe: filter_text)" [class.pub_active]="pub_data.EntryKey == routeFragment">
+      <fa-icon [icon]="faBookOpen"></fa-icon>
+      <app-publication [pub_data]="pub_data" [show_more]="pub_data.EntryKey == routeFragment"></app-publication>
+    </li>
+  </ul>
+
+</span>
+
+<span *ngIf="(theses | filteredPipe: filter_text).length">
+
+  <h3 class="mt-2">Theses</h3>
+  <ul class="list-group">
+    <li class="list-group-item publist_row p-2" *ngFor="let pub_data of (theses | filteredPipe: filter_text)">
+      <fa-icon [icon]="faBook"></fa-icon>
+      <app-publication [pub_data]="pub_data" [show_more]="pub_data.EntryKey == routeFragment"></app-publication>
+    </li>
+  </ul>
+
+</span>
+
+<br />

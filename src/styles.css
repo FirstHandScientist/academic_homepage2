@@ -1,0 +1,14 @@
+/* Set various colors */
+.color-theme {
+  color: #428bca;
+}
+
+/* Set link colors */
+a:link, a:visited, a:hover { 
+  color: #428bca;
+  cursor: pointer;
+}
+
+.container-fluid {
+  max-width: 920px;
+}

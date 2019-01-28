@@ -1,0 +1,3 @@
+[submodule "src/barriergame"]
+	path = src/barriergame
+	url = git@github.com:pettni/Ultra-Square-Catcher-USC-.git

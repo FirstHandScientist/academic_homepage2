@@ -1,0 +1,54 @@
+<span [ngSwitch]="pub_data.EntryType">
+	
+	<span (click) = "show_more = !show_more">
+		
+		<a id={{pub_data.EntryKey}}>
+
+		<span *ngSwitchCase="'article'">
+			{{pub_data.Fields.Author_noand}}, <strong>{{pub_data.Fields.Title}}</strong>, 
+			<em>{{pub_data.Fields.Journal}}</em>, 
+			<span *ngIf="pub_data.Fields.Volume">vol. {{pub_data.Fields.Volume}}, </span>
+			<span *ngIf="pub_data.Fields.Number">no. {{pub_data.Fields.Number}}, </span>
+			<span *ngIf="pub_data.Fields.Pages">pp. {{pub_data.Fields.Pages}}, </span>
+			{{pub_data.Fields.Year}} 
+		</span>
+
+		<span *ngSwitchCase="'inproceedings'">
+			{{pub_data.Fields.Author_noand}}, <strong>{{pub_data.Fields.Title}}</strong>, in <em>{{pub_data.Fields.Booktitle}}</em>,
+			<span *ngIf="pub_data.Fields.Pages">pp. {{pub_data.Fields.Pages}},</span> {{pub_data.Fields.Year}}
+		</span>
+
+		<span *ngSwitchCase="'incollection'">
+			{{pub_data.Fields.Author_noand}}, <strong>{{pub_data.Fields.Title}}</strong>, in <em>{{pub_data.Fields.Booktitle}}</em>,
+			<span *ngIf="pub_data.Fields.Pages">pp. {{pub_data.Fields.Pages}},</span> {{pub_data.Fields.Year}}
+		</span>
+
+		<span *ngSwitchCase="'phdthesis'">
+			{{pub_data.Fields.Author_noand}}, <strong>{{pub_data.Fields.Title}}</strong>, Ph.D thesis at <em>{{pub_data.Fields.School}}</em>, {{pub_data.Fields.Year}}	
+		</span>
+
+		<span *ngSwitchCase="'mastersthesis'">
+			{{pub_data.Fields.Author_noand}}, <strong>{{pub_data.Fields.Title}}</strong>, <span *ngIf="pub_data.Fields.Type">{{pub_data.Fields.Type}}</span> at <em>{{pub_data.Fields.School}}</em>, {{pub_data.Fields.Year}}	
+		</span>
+
+		<span class="color-theme">
+			<fa-icon [icon]="show_more? faArrowDown : faArrowRight"></fa-icon>
+		</span>
+
+		</a>
+		
+	</span>
+
+	<div *ngIf="show_more" id="pubhidden">
+		<span *ngIf="pub_data.Fields.Abstract"><strong>Abstract: </strong>{{pub_data.Fields.Abstract}}</span>
+		<div class="pubButtons">
+			<a class="badge color-theme badge-primary" *ngIf="pub_data.Fields.Doi" href="https://doi.org/{{pub_data.Fields.Doi}}">DOI: {{pub_data.Fields.Doi}}</a>
+			<a class="badge color-theme badge-primary" *ngIf="pub_data.Fields.Eprint" href="http://arxiv.org/abs/{{pub_data.Fields.Eprint}}">arXiv: {{pub_data.Fields.Eprint}} [{{pub_data.Fields.Eprintclass}}]</a> 
+			<a class="badge color-theme badge-primary" *ngIf="pub_data.Fields.Url" href="{{pub_data.Fields.Url}}">Link</a> 
+			<a class="badge color-theme badge-primary" *ngIf="pub_data.Fields.Slides" href="{{pub_data.Fields.Slides}}">Slides</a>
+			<a class="badge color-theme badge-primary" (click)="open()">BibTeX</a>
+		</div>
+	</div>      
+
+</span>
+

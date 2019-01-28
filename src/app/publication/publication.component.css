@@ -1,0 +1,6 @@
+.pubButtons > a.badge {
+  color: white;
+  background-color: #428bca;
+  cursor: pointer;
+  margin-right: 3px;
+}
