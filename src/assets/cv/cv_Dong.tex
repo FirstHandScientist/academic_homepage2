@@ -21,13 +21,13 @@
 \documentclass[a4paper,10pt]{article}
 
 % Font loading
-\usepackage{fontspec}
-\defaultfontfeatures{Mapping=tex-text}
+% \usepackage{fontspec}
+% \defaultfontfeatures{Mapping=tex-text}
 % Set main font for document
 % \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
 
 % Formatting
-\usepackage{xunicode,xltxtra,url,parskip}
+% \usepackage{xunicode,xltxtra,url,parskip}
 
 % Coloring
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -66,7 +66,7 @@
 % Put references sections in the TOC (PDF and HTML links)
 \usepackage[nottoc,numbib]{tocbibind}
 
-\def\myname{Dong Liu}
+\def\myname{Liu Dong}
 
 
 \begin{document}
@@ -89,7 +89,8 @@
 \begin{tabular}{rl}
   \textsc{Address:} & Malvinas Vag 10, Stockholm, Sweden \\
   \textsc{Email:} & \href{mailto:doli@kth.se}{\nolinkurl{doli@kth.se}} \\
-  \textsc{Website:} & \href{https://firsthandscientist.github.io}{\nolinkurl{firsthandscientist.github.io}}
+  % \textsc{Google Scholar:} & \href{https://scholar.google.com/citations?user=eK9LoQMAAAAJ&hl=en}{\aiGoogleScholar}\\
+  \textsc{Website:} & \href{https://firsthandscientist.github.io}{firsthandscientist.github.io}\\
 \end{tabular}
 
 % ----------------------------------------------------------------------------------------
@@ -101,7 +102,7 @@
 \begin{tabular}{r|p{13cm}}
 
   \textsc{Present} 	& Ph.D. \\
-  \textsc{2016 Dec.} 	& \emph{Research in statistical models, Bayesian inference, machine learning} \\
+  \textsc{2016 Dec} 	& \emph{Research in statistical models, Bayesian inference, machine learning} \\
                     & { Division of Information Science and Engineering
                       } \\
                     & {School of Electrical Engineering and Computer Science} \\
@@ -110,16 +111,18 @@
 
   % ------------------------------------------------
 
-  \textsc{2016 Mar.} 	& M.Sc. {Excellent Graduate of Shanghai City in 2016, top $5\%$}\\
-  \textsc{2013 Sep.} 	& {Department of Information and Communication Engineering} \\
+  \textsc{2016 Mar} 	& M.Sc. \\
+  \textsc{2013 Sep}  & \textbf{Top $\mathbf{5\%}$, Excellent Graduate of Shanghai City in 2016.}\\
+                    & {Department of Information and Communication Engineering} \\
                     & {School of Electrical and Information Engineering} \\
                     & {Tongji Univsersity, Shanghai, China.}\\
   \multicolumn{2}{c}{} \\
 
   % ------------------------------------------------
 
-  \textsc{2013 Jul.} 	& B.E. {Excellent Graduate of Liaoning Province in 2013, top $1\%$}\\
-  \textsc{2009 Sep.} 	& {Department of Information and Communication Engineering}\\
+  \textsc{2013 Jul} 	& B.E. \\
+  \textsc{2009 Sep} & \textbf{Top $\mathbf{1\%}$, Excellent Graduate of Liaoning Province in 2013}\\
+                    & {Department of Information and Communication Engineering}\\
                     & {Shenyang University of Technology, Shenyang, China} \\
   \multicolumn{2}{c}{}\\
 
@@ -133,8 +136,8 @@
 
 \begin{tabular}{r|p{13cm}}
 
-  \textsc{2016 Dec.}  & Engineer, standardization of radio access technology  \\
-  \textsc{2016 Apr.}  & Shanghai Research Insittute, Huawei Technologies Co., Ltd \\
+  \textsc{2016 Dec}  & Engineer, standardization of radio access technology  \\
+  \textsc{2016 Apr}  & Shanghai Research Insittute, Huawei Technologies Co., Ltd \\
   \multicolumn{2}{c}{} \\
 
 \end{tabular}
@@ -142,28 +145,32 @@
 \section{Teaching Experience}
 \begin{tabular}{r|p{13cm}}
 
-  \textsc{Present}  & Teaching Assistant, graduate course EQ2341 Pattern Recognition and Machine Learning, KTH Royal Institute of Technology \\
-  \textsc{2017 Sep.}  & {}  \\
+  \textsc{Present}  & Teaching Assistant \\
+  \textsc{2017 Sep}  & Graduate course \href{https://www.kth.se/student/kurser/kurs/EQ2341?l=en}{EQ2341 Pattern Recognition and Machine Learning} \\
+                    & KTH Royal Institute of Technology, Sweden.\\
 
 \end{tabular}
 \section{Summer School Experience}
 \begin{tabular}{r|p{13cm}}
 
-  \textsc{2012 Sep.}  & Summer School at Chinese Academy of Sciences, Shenyang Institute of Automation, China. Scholarship provided by the Chinese Academy of Sciences. \\
+  \textsc{2012 Sep}  & Chinese Academy of Sciences, China. \\
+                     & Scholarship provided by the Chinese Academy of Sciences. \\
   \multicolumn{2}{c}{}\\
-  \textsc{2012 Aug.}  & Summer School at Kochi University of Technology, Kochi, Japan Scholarship provided Kochi University of Technology.  \\
-
+  \textsc{2012 Aug}  & Kochi University of Technology, Kochi, Japan. \\
+                     & Scholarship provided Kochi University of Technology.
 \end{tabular}
 
 \section{Research Interests}
-Machine learning, Bayesian inference, optimization, and their applications in signal
-processing. Stochastic models and its application to communications.
-%----------------------------------------------------------------------------------------
+Machine learning, Bayesian inference, optimization, signal processing, and their applications. Stochastic models and its application to communications.
+% ----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 % ----------------------------------------------------------------------------------------
+
 \begin{bibunit}[IEEEtran_Pol]
   \renewcommand\refname{Publications}
-  \nocite{liu2019neural,
+  \nocite{liu2019powering,
+    honore2019hidden,
+    liu2019neural,
     liu2019discontinuous,
     liu2019entropy,
     liu2019alpha,
@@ -180,151 +187,197 @@ processing. Stochastic models and its application to communications.
     ren2015spectram,
     ren2015spectrum}
   \footnotesize{\putbib[../bibfile]}
-
 \end{bibunit}
 
 % ----------------------------------------------------------------------------------------
 %	SCHOLARSHIPS AND ADDITIONAL INFO
 % ----------------------------------------------------------------------------------------
-\section{Grants and awards}
+\section{Grants \& Scholarships}
 \begin{savenotes}
-  \begin{tabular}{r|p{13cm}}
-    % Gålöstiftelsen 14000 SEK
-    % EECS Malme stiftelsen 21200 SEK
-    % Wallenberg jubilee 4700 SEK
-    % KTH Opportunities 13200 SEK
-    % KVA Engineering sciences 19038 SEK
-    % Åforsk 6000 SEK
-    % Current sum: 78138 SEK
-    \textsc{2019 Mar} & Travel grants. Total amount $\approx 78\,\mathrm{kSEK}\approx 8.4\,\mathrm{k\$} $.\\
-    \textsc{2017 Sep} & \footnotesize{Gålöstiftelsen study \textbf{travel grant},
-                        Malme's foundation \textbf{travel grant} through the EECS school at KTH,
-                        KTH Opportunities Fund \textbf{project scholarship},
-                        Knut and Alice Wallenberg Jubilee appropriation \textbf{travel grant},
-                        \AA forsk Foundation \textbf{travel grant}, and
-                        Engineering Sciences 2017 call from The Royal Swedish
-                        Academy of Sciences (KVA, call ES2017-0011) \textbf{project and travel
-                        grant.}} \\
+  \begin{longtable}{r|p{13cm}}
+    % General Travel grant: 21500 SEK
+    % Ericsson research grant: 20 000 SEK
+    % Wallenberg jubilee 10100 SEK
+    % SPS 500 USD = 4846 SEK
+    % Current sum: 56446 SEK
+    \textsc{2019 Nov} & Grants, amount $\approx 56k\,\mathrm{SEK}$.\\
+    \textsc{2017 Jan} & {} \\
+                      &  Grant from Knut and Alice Wallenberg Foundation
+                        "Jubilee appropriation", Sweden, 2019. \\
+                      & Grant from Ericsson Research Foundation, Sweden, 2019. \\
+                      & Grant from General Travel Foundation, KTH, Sweden, 2019. \\
+                      & Gran from IEEE Signal Processing Society Travel Grant, 2019. \\
+    \multicolumn{2}{c}{} \\
+    % National graduate scholarship: 8k * 2.5 = 20k RMB
+    % National Scholarship for Postgraduates in 2015: 20k RMB
+    % period amount: 40k RMB = 55k SEK
+    \textsc{2016 Dec} & Postgraduate studies scholarships, amount $\approx 55k\,\mathrm {SEK}$. \\
+    \textsc{2013 Aug} & \\
+      & National Scholarship for Postgraduate Studies, China, 2013-2016. \\
+      & National Scholarship for Postgraduate, China, 2015.\\
     \multicolumn{2}{c}{} \\
 
-    \textsc{2013 Mar} & Exchange studies scholarships \\
-    \textsc{2012 Aug} & \footnotesize{\textbf{Erasmus} and \textbf{AGAUR}\footnote{~Catalan Agency for Management of University and Research Grants} exchange studies scholarships.}  \\
+    % National schorlarship: 8k *2 RMB
+    % Liaoning provincial: 8k RMB
+    % mayor: 6k RMB
+    %
+    % Special Scholarship from Shenyang University of Technology in 2012 and 2011, respectively: 2K *2 RMB
+    % First-class Scholarship from Shenyang University of Technology in 2010: 1.5 K RMB
+    % period amount: 35.5K RMB = 48.9K RMB
+    \textsc{2013 Jun}	& Undergraduate studies scholarships, amount $\approx 49k\,\mathrm {SEK}$.\\
+    \textsc{2009 Sep}	& \\
+      & National Scholarship for Undergraduates in 2012 and 2011, respectively.\\
+      & The First Class Scholarship of Chinese Instrument and Control Society in 2012.\\
+      & The Mayor Scholarship of Shenyang City in 2011.\\
+      & The Scholarship of Liaoning Provincial Government in 2010.\\
+      & The Special Scholarship in 2012, 2011 and the First-class scholarship in 2010, from Shenyang University of Technology.\\
     \multicolumn{2}{c}{} \\
 
-    \textsc{2009 Jun}	& Promotion's top-10 award. Ranked $4^{\mathrm{th}}$. \\
-    \textsc{2008 Sep}	& \footnotesize{Receiver of the UPC BarcelonaTech award for \textbf{first
-                        year students with top-10 grades} in Telecommunications Engineering.} \\
-
-  \end{tabular}
+  \end{longtable}
 \end{savenotes}
+
+% ----------------------------------------------------------------------------------------
+%	Awards and Hornors
+% ----------------------------------------------------------------------------------------
+\section{Contest Awards}
+
+\begin{longtable}[H]{r|p{13.5cm}}
+  \hspace{20pt} \textsc{2019} & The Bronze Award in the $5$th China Internet+ University Graduates Innovation \& Entrepreneurship Awards. \\
+  \multicolumn{2}{c}{} \\
+  \textsc{2014} & The First Prize in the National Postgraduate Mathematic Contest in Modeling in China.\\
+                              & Top \textbf{$\mathbf{2.45\%}$ in 4900} teams in China, fast fading channel modeling and optimization. Algorithm optimization and programming for channel modeling simulation.\\
+  \multicolumn{2}{c}{} \\
+
+  \textsc{2012} & The President Award in Fukuda Gold Robot Cup Contest of Shenyang City. \\
+                              & My team spent 2 months designing a searching robot capable of seeking and picking metal disks in a given area. My work: circuit welding and a part of programming for the main micro-chip. \\
+  \multicolumn{2}{c}{} \\
+
+  \textsc{2011} & The Grand Prize in Liaoning Contest District of National Undergraduate Electronic Design Contest. \\
+                              & A digital signal transmission analyzer was designed by my team. I programmed the FPGA chips in this contest.\\
+  \multicolumn{2}{c}{} \\
+
+  \textsc{2011} & The First Prize in Liaoning Contest District of Chinese Undergraduate Mathematical Contest in 2011 and
+                  2010 respectively. \\
+\end{longtable}
+
+\section{Honors}
+\begin{longtable}[H]{r|p{13.5cm}}
+  \textsc{2016 Jun} & The Excellent Graduate of Shanghai City in 2016. \\
+  \textsc{to}& The Excellent Graduate of Liaoning Province in 2013. \\
+  \textsc{2011 Sep} & The Excellent Graduate of Shenyang University of Technology in 2013. \\
+                    & The Award Nomination in People of Year 2012 of Liaoning Provincial Undergraduates. \\
+                    & The Pivot of Merit Students of Liaoning Province in 2012. \\
+                    & The Outstanding Inspirational Talent of College Students of Liaoning Province in 2011. \\
+                    & The Youth Medal of Shenyang University of Technology in 2012. 4 award winners are selected among over 16,000 undergraduates every two years. \\
+                    & The {Second Prize for Outstanding Contribution} to the university in 2011, the {Excellent Student Leader} in 2011, the {Pivot of Merit Students} in 2010, the {Top Ten Students} of school in 2012, 2011 and 2010, respectively, Shenyang University of Technology.
+\end{longtable}
 
 % ----------------------------------------------------------------------------------------
 %	Contact with the scientific community
 % ----------------------------------------------------------------------------------------
 
-\section{Participation in the scientific community}
+% \section{Participation in the scientific community}
 
-\begin{longtable}[H]{r|p{13.5cm}}
+% \begin{longtable}[H]{r|p{13.5cm}}
+    %     \emph{Current}	& Reviewer for \textbf{Elsevier Signal Processing} \\
+    %     \textsc{2019 Mar} &  \\
+    %     \multicolumn{2}{c}{} \\
 
-  \emph{Current}	& Reviewer for \textbf{Elsevier Signal Processing} \\
-  \textsc{2019 Mar} &  \\
-  \multicolumn{2}{c}{} \\
-
-  \emph{Current}	& Reviewer for the \textbf{IEEE Transactions on Signal Processing} \\
-  \textsc{2015 Aug} &  \\
-  \multicolumn{2}{c}{} \\
-
-
-  \textsc{2019 Apr} &  \textsc{12-13 Apr}, Invited participant in the 2019 IEEE Signal Processing Society (SPS) Long Range Planning Meeting\\
-                  & \\
-                  & Lecture presentation (\textsc{9 Apr}) within the \emph{2019 IEEE $16^{\mathrm{th}}$ International
-                    Symposium on Biomedical Imaging} (\textbf{ISBI 2019}), titled
-                    \textbf{SpotNet --- Learned iterations for cell detection in image-based immunoassays}, access at \href{https://embs.papercept.net/conferences/scripts/myprogram.pl?ConfID=79&Add=208}{\texttt{embs.papercept.net}}.\\
-                  & \footnotesize{Hilton Molino Stucky, Venice, Italy.} \\
-  \multicolumn{2}{c}{} \\
+    %     \emph{Current}	& Reviewer for the \textbf{IEEE Transactions on Signal Processing} \\
+    %     \textsc{2015 Aug} &  \\
+    %     \multicolumn{2}{c}{} \\
 
 
-
-  \textsc{2019 Jan} & \textsc{7 Jan - 7 Feb}, Research visit at \textbf{Professor Jean-Luc Starck}'s group (\textbf{CosmoStat}). \\
-                  & \footnotesize{Department of Astrophysics, \textbf{CEA Paris-Saclay}, Paris, France} \\
-                  & \\
-                  & \textsc{14 and 28 Jan}, presentations at \textbf{Cosmostat} and \textbf{Parietal}, \textbf{NeuroSpin}, \textbf{INRIA}, respectively, titled \emph{Cell detection by functional inverse diffusion and non-negative group sparsity - Biology, physics, math and engineering}, access at \href{http://www.cosmostat.org/events/cosmoclub/cosmosclub-pol}{\texttt{www.cosmostat.org}} and \href{https://team.inria.fr/parietal/slides-of-pol-del-aguila-plas-talk-available-now-online/}{\texttt{team.inria.fr/parietal}}. \\
-  \multicolumn{2}{c}{} \\
-
-  \textsc{2018 Jul} & Attendance to the \emph{Thirty-fifth International Conference on Machine
-                      Learning} (\textbf{ICML 2018}). \\
-                  & \footnotesize{Stockholmsm\"{a}ssan, Stockholm, Sweden.} \\
-  \multicolumn{2}{c}{} \\
-
-  \textsc{2018 Jun} & Poster presentation within the \emph{SIAM Conference on Imaging Science}
-                      (\textbf{SIAM-IS 2018}), titled \textbf{Source localization by spatially
-                      variant blind deconvolution}, access at \href{https://www.siam-is18.dm.unibo.it/uploads/store/a7a8b242b168225d0be8998fa373f58b.pdf}{\texttt{www.siam-is18.dm.unibo.it}}. \\
-                  & \footnotesize{\textbf{University of Bologna}, Bologna, Italy.}\\
-  \multicolumn{2}{c}{} \\
-
-  \textsc{2018 Apr} & Poster presentation within the \emph{IEEE International Conference
-                      on Acoustics, Speech and Signal Processing} (\textbf{ICASSP 2018}), titled
-                      \textbf{Convolutional group-sparse coding and source localization}, access at \href{https://sigport.org/documents/convolutional-group-sparse-coding-and-source-localization}{\texttt{sigport.org}}. \\
-                  & \footnotesize{Calgary Talus Convention Centre, Calgary, Alberta, Canada.} \\
-                  & \\
-                  & \textsc{9 - 13 Apr}, Research visit at \textbf{Professor Stephen P. Boyd's group}. \\
-                  & \textsc{10 Apr}, Presentation to the group titled
-                    \emph{Cell detection by functional inverse diffusion and non-negative group sparsity}.\\
-                  & \footnotesize{Information Systems Laboratory, Department of \textbf{Electrical Engineering,
-                    Stanford University}, Stanford, California, United States of America} \\
-                  & \\
-                  & Poster presentation within the \emph{2018 IEEE $15^{\mathrm{th}}$ International
-                    Symposium on Biomedical Imaging} (\textbf{ISBI 2018}), titled
-                    \textbf{Cell detection on image-based immunoassays}.\\
-                  & \footnotesize{Omni Shoreham Hotel, Washington, D.C., United States of America.} \\
-  \multicolumn{2}{c}{} \\
-
-  \textsc{2017 Nov} & Lecture presentation within the workshop \emph{Generative models,
-                      parameter learning, and sparsity} (VMVW02), titled
-                      \textbf{Cell detection by functional inverse diffusion and group sparsity},
-                      access at \href{https://downloads.sms.cam.ac.uk/2600830/2600858.mp4}{\texttt{downloads.sms.cam.ac.uk}}. \\
-                  & \footnotesize{\textbf{Isaac Newton Institute for Mathematical Sciences},
-                    \textbf{University of Cambridge}, Cambridge, United Kingdom.
-                    Within the programme \emph{Variational methods and effective
-                    algorithms for imaging and vision}.}\\
-
-\end{longtable}
-
-% ----------------------------------------------------------------------------------------
-%	TEACHING EXPERIENCE
-% ----------------------------------------------------------------------------------------
-% \section{Teaching experience}
-
-% \begin{bibunit}[IEEEtran_Pol]
-%   \begin{tabular}{r|p{13cm}}
-
-%     \emph{Current}	 & Supervision of Master's and Bachelor's thesis (see below) \\
-%     \textsc{2017 Feb}  & \footnotesize{Main supervisor of two master's thesis, \cite{Jones2018} and one
-%                          ongoing.
-%                          Designer of two bachelor's thesis projects, attracting $5$
-%                          different groups of two students. Main supervision for $2$ bachelor's
-%                          thesis \cite{F2A2018,F2B2018}, and co-supervisor for six,
-%                          \cite{F3A2018,F3B2018,F3C2018} and three ongoing. } \\
-%     \multicolumn{2}{c}{} \\
-
-% 	  \textsc{2018 Dec}     & Teaching assistance in the course \textbf{EQ2300: Digital Signal Processing} \\
-% 	  \textsc{2014 Sep} & \footnotesize{Taught every year \textsc{Nov -- Dec} by Prof. Joakim Jald\'{e}n and
-%                         one to three assistants. Approximate numbers: $120\,\mathrm{h}$ of guidance of
-%                         exercise sessions and lectures, $140\,\mathrm{h}$ of
-%                         class preparation, $45\,\mathrm{h}$ of course and material development,
-%                         $100\,\mathrm{h}$ of grading of projects and exams, and $20\,\mathrm{h}$ of private tutoring.} \\
-
-%   \end{tabular}
+    %     \textsc{2019 Apr} &  \textsc{12-13 Apr}, Invited participant in the 2019 IEEE Signal Processing Society (SPS) Long Range Planning Meeting\\
+    %                           & \\
+    %                           & Lecture presentation (\textsc{9 Apr}) within the \emph{2019 IEEE $16^{\mathrm{th}}$ International
+                                  %                                   Symposium on Biomedical Imaging} (\textbf{ISBI 2019}), titled
+                                  %                                   \textbf{SpotNet --- Learned iterations for cell detection in image-based immunoassays}, access at \href{https://embs.papercept.net/conferences/scripts/myprogram.pl?ConfID=79&Add=208}{\texttt{embs.papercept.net}}.\\
+    %                           & \footnotesize{Hilton Molino Stucky, Venice, Italy.} \\
+    %     \multicolumn{2}{c}{} \\
 
 
-%   \renewcommand\refname{\normalsize{Supervised theses}}
-%   \footnotesize{
-%     \putbib[../pubs/bibfile_students]}
-% \end{bibunit}
 
-% ----------------------------------------------------------------------------------------
-%	LANGUAGES
-% ----------------------------------------------------------------------------------------
+    %     \textsc{2019 Jan} & \textsc{7 Jan - 7 Feb}, Research visit at \textbf{Professor Jean-Luc Starck}'s group (\textbf{CosmoStat}). \\
+    %                           & \footnotesize{Department of Astrophysics, \textbf{CEA Paris-Saclay}, Paris, France} \\
+    %                           & \\
+    %                           & \textsc{14 and 28 Jan}, presentations at \textbf{Cosmostat} and \textbf{Parietal}, \textbf{NeuroSpin}, \textbf{INRIA}, respectively, titled \emph{Cell detection by functional inverse diffusion and non-negative group sparsity - Biology, physics, math and engineering}, access at \href{http://www.cosmostat.org/events/cosmoclub/cosmosclub-pol}{\texttt{www.cosmostat.org}} and \href{https://team.inria.fr/parietal/slides-of-pol-del-aguila-plas-talk-available-now-online/}{\texttt{team.inria.fr/parietal}}. \\
+    %     \multicolumn{2}{c}{} \\
+
+    %     \textsc{2018 Jul} & Attendance to the \emph{Thirty-fifth International Conference on Machine
+                              %                               Learning} (\textbf{ICML 2018}). \\
+    %                           & \footnotesize{Stockholmsm\"{a}ssan, Stockholm, Sweden.} \\
+    %     \multicolumn{2}{c}{} \\
+
+    %     \textsc{2018 Jun} & Poster presentation within the \emph{SIAM Conference on Imaging Science}
+                              %                               (\textbf{SIAM-IS 2018}), titled \textbf{Source localization by spatially
+                              %                               variant blind deconvolution}, access at \href{https://www.siam-is18.dm.unibo.it/uploads/store/a7a8b242b168225d0be8998fa373f58b.pdf}{\texttt{www.siam-is18.dm.unibo.it}}. \\
+    %                           & \footnotesize{\textbf{University of Bologna}, Bologna, Italy.}\\
+    %     \multicolumn{2}{c}{} \\
+
+    %     \textsc{2018 Apr} & Poster presentation within the \emph{IEEE International Conference
+                              %                               on Acoustics, Speech and Signal Processing} (\textbf{ICASSP 2018}), titled
+                              %                               \textbf{Convolutional group-sparse coding and source localization}, access at \href{https://sigport.org/documents/convolutional-group-sparse-coding-and-source-localization}{\texttt{sigport.org}}. \\
+    %                           & \footnotesize{Calgary Talus Convention Centre, Calgary, Alberta, Canada.} \\
+    %                           & \\
+    %                           & \textsc{9 - 13 Apr}, Research visit at \textbf{Professor Stephen P. Boyd's group}. \\
+    %                           & \textsc{10 Apr}, Presentation to the group titled
+                                  %                                   \emph{Cell detection by functional inverse diffusion and non-negative group sparsity}.\\
+    %                           & \footnotesize{Information Systems Laboratory, Department of \textbf{Electrical Engineering,
+                                  %                                   Stanford University}, Stanford, California, United States of America} \\
+    %                           & \\
+    %                           & Poster presentation within the \emph{2018 IEEE $15^{\mathrm{th}}$ International
+                                  %                                   Symposium on Biomedical Imaging} (\textbf{ISBI 2018}), titled
+                                  %                                   \textbf{Cell detection on image-based immunoassays}.\\
+    %                           & \footnotesize{Omni Shoreham Hotel, Washington, D.C., United States of America.} \\
+    %     \multicolumn{2}{c}{} \\
+
+    %     \textsc{2017 Nov} & Lecture presentation within the workshop \emph{Generative models,
+                              %                               parameter learning, and sparsity} (VMVW02), titled
+                              %                               \textbf{Cell detection by functional inverse diffusion and group sparsity},
+                              %                               access at \href{https://downloads.sms.cam.ac.uk/2600830/2600858.mp4}{\texttt{downloads.sms.cam.ac.uk}}. \\
+    %                           & \footnotesize{\textbf{Isaac Newton Institute for Mathematical Sciences},
+                                  %                                   \textbf{University of Cambridge}, Cambridge, United Kingdom.
+                                  %                                   Within the programme \emph{Variational methods and effective
+                                  %                                   algorithms for imaging and vision}.}\\
+
+    %   \end{longtable}
+
+    %     ----------------------------------------------------------------------------------------
+    %     TEACHING EXPERIENCE
+    %     ----------------------------------------------------------------------------------------
+    %     \section{Teaching experience}
+
+    %     \begin{bibunit}[IEEEtran_Pol]
+    %     \begin{tabular}{r|p{13cm}}
+
+    %     \emph{Current}	 & Supervision of Master's and Bachelor's thesis (see below) \\
+    %     \textsc{2017 Feb}  & \footnotesize{Main supervisor of two master's thesis, \cite{Jones2018} and one
+                               %                                ongoing.
+                               %                                Designer of two bachelor's thesis projects, attracting $5$
+                               %                                different groups of two students. Main supervision for $2$ bachelor's
+                               %                                thesis \cite{F2A2018,F2B2018}, and co-supervisor for six,
+                               %                                \cite{F3A2018,F3B2018,F3C2018} and three ongoing. } \\
+    %     \multicolumn{2}{c}{} \\
+
+    %     \textsc{2018 Dec}     & Teaching assistance in the course \textbf{EQ2300: Digital Signal Processing} \\
+    %     \textsc{2014 Sep} & \footnotesize{Taught every year \textsc{Nov -- Dec} by Prof. Joakim Jald\'{e}n and
+                              %                               one to three assistants. Approximate numbers: $120\,\mathrm{h}$ of guidance of
+                              %                               exercise sessions and lectures, $140\,\mathrm{h}$ of
+                              %                               class preparation, $45\,\mathrm{h}$ of course and material development,
+                              %                               $100\,\mathrm{h}$ of grading of projects and exams, and $20\,\mathrm{h}$ of private tutoring.} \\
+
+    %   \end{tabular}
+
+
+    %     \renewcommand\refname{\normalsize{Supervised theses}}
+    %     \footnotesize{
+    %     \putbib[../pubs/bibfile_students]}
+    %     \end{bibunit}
+
+    %     ----------------------------------------------------------------------------------------
+    %     LANGUAGES
+    %     ----------------------------------------------------------------------------------------
 
 \vspace{-10pt}
 
@@ -332,51 +385,27 @@ processing. Stochastic models and its application to communications.
 
 \begin{tabular}{rp{10cm}}
 
-  \textsc{Mother tongue (C2+):} & Catalan and Spanish \\
+  \textsc{Mother tongue :} & Chinese \\
 
-  \textsc{Professional (C2):} & English \\
-
-  \textsc{Conversational (B2):} & Swedish \\
-
-  \textsc{Basic (A1-A2):} & Italian and French (\textsc{DELF} A2, \textsc{2006 Aug})
+  \textsc{Professional :} & English \\
 
 \end{tabular}
 
-% ----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS
-% ----------------------------------------------------------------------------------------
-
-\vspace{-15pt}
+    %     ----------------------------------------------------------------------------------------
+    %     COMPUTER SKILLS
+    %     ----------------------------------------------------------------------------------------
 
 \section{Other skills}
 
 \begin{tabular}{rp{12cm}}
-	Technical skills:  & Experienced in the administration of GPU-enabled Linux computational servers.
-                       Experienced in the maintenance of websites for academic groups.
-                       Professional in electronic design and measurement, network testing and
-                       simulation, measurement of digital communications systems, and antenna design
-                       and performance analysis. \vspace{5pt}\\
-	Programming:       &  \textsc{C/C++, Java, R, Python, TensorFlow, Bash, Matlab, \LaTeX}  \vspace{5pt}\\
-	Soft skills: 	   & Social and friendly collaborator. Accomplished and praised supervisor of
-                     student theses and teacher of exercise sessions. Very attentive to
-                     detail. Experienced in academia--industry collaborations.
-
+	Technical skills:  & Experienced in the administration of Linux computational servers.
+                       \vspace{5pt}\\
+	Programming:       & \textsc{Python, Pytorch, Bash, Matlab, \LaTeX}  \vspace{5pt}\\
 \end{tabular}
 
-% ----------------------------------------------------------------------------------------
-% INTERESTS AND ACTIVITIES
-% ----------------------------------------------------------------------------------------
-
-\vspace{-15pt}
-
-\section{Interests and activities}
-
-Linux, Free / Libre / Open-source software. Open-access research and open science. Philosophy and sociology. \\
-Regular opera-goer, moderate cinephile, initiated tap-dancer and avid reader. \\
-Hiking enthusiast and ex-capoeira practicioner.
 
 \end{document}
 %%% Local Variables:
-%%% mode: xelatex
+%%% mode: latex
 %%% TeX-master: t
 %%% End:
