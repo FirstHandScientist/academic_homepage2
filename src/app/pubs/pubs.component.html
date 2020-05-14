@@ -7,15 +7,6 @@
   </div>
 </div>
 
-<span *ngIf="(articles | filteredPipe: filter_text).length">
-
-  <h3 class="mt-2">Journal Papers</h3>
-  <ul class="list-group">
-    <li *ngFor="let pub_data of (articles | filteredPipe: filter_text)" class="list-group-item publist_row p-2" [class.pub_active]="pub_data.EntryKey == routeFragment">
-      <fa-icon [icon]="faScroll"></fa-icon>
-      <app-publication [pub_data]="pub_data" [show_more]="pub_data.EntryKey == routeFragment"></app-publication>
-    </li>
-  </ul>
 
 <span *ngIf="(conference | filteredPipe: filter_text).length">
 
@@ -27,6 +18,18 @@
     </li>
   </ul>
 
+</span>
+
+
+<span *ngIf="(articles | filteredPipe: filter_text).length">
+
+  <h3 class="mt-2">Journal Papers</h3>
+  <ul class="list-group">
+    <li *ngFor="let pub_data of (articles | filteredPipe: filter_text)" class="list-group-item publist_row p-2" [class.pub_active]="pub_data.EntryKey == routeFragment">
+      <fa-icon [icon]="faScroll"></fa-icon>
+      <app-publication [pub_data]="pub_data" [show_more]="pub_data.EntryKey == routeFragment"></app-publication>
+    </li>
+  </ul>
 </span>
 
 <span *ngIf="(chapters | filteredPipe: filter_text).length">
