@@ -37,7 +37,7 @@ Navigate to `http://localhost:4200/`. The app will automatically reload if you c
 ## Deployment
 Execute
 ```
-ng build --prod --deploy-url "DEPLOY_URL" --base-href "BASE_HREF"
+ng build
 ```
 where DEPLOY_URL is the address where the page will be deployed (e.g. ```http://its.caltech.edu```), and BASE_HREF is the location on that server (e.g. ```/~lnilsson/```)
 
