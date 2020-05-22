@@ -13,6 +13,7 @@ import { MainComponent } from './main/main.component';
 import { PubsComponent, FilteredPipe } from './pubs/pubs.component';
 import { BioComponent } from './bio/bio.component';
 import { ResearchComponent } from './research/research.component';
+import { ElibComponent } from './elib/elib.component';
 
 import { CitationService } from './citation.service';
 import { NewsService } from './news.service';
@@ -24,7 +25,7 @@ import { PublicationComponent, BibtexmodalComponent } from './publication/public
 })
 export class AppComponent {
   public isCollapsed = true;
-  
+
   // icons
   faHome = faHome;
   faUser = faUser;
@@ -47,6 +48,7 @@ export class AppComponent {
     FilteredPipe,
     PublicationComponent,
     BibtexmodalComponent,
+    ElibComponent,
   ],
   entryComponents: [
     BibtexmodalComponent,
