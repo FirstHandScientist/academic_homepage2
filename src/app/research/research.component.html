@@ -1,64 +1,90 @@
-<ngb-tabset justify="fill">
-	<ngb-tab title="Main">
+<ngb-tabset justify="true">
+	<ngb-tab title="Project and Code">
 		<ng-template ngbTabContent>
 
 			<div class="card-body">
 
-				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<p class="card-text">
+          Research projects and associated software/code.
 				</p>
 			</div>
 
+
+      <div class="card-body">
+				<h3 class="card-title"> RENN </h3>
+				<p class="card-text">
+          An inference neural network. To be released soon.
+        </p>
+			</div>
+
+
+      <div class="card-body">
+				<h3 class="card-title"> GenHMM </h3>
+				<p class="card-text">
+          <a style="padding-right: 1px;" href="https://github.com/FirstHandScientist/genhmm">GenHMM</a>: a neural network based hidden Markov model.
+        </p>
+			</div>
+
+      <div class="card-body">
+				<h3 class="card-title"> GenMM </h3>
+				<p class="card-text">
+          <a style="padding-right: 1px;" href="https://github.com/FirstHandScientist/EM-GM">GenMM</a>: a mixture of normalizing flow models within expectation maximization.
+        </p>
+			</div>
+
+
+      <div class="card-body">
+				<h3 class="card-title"> AlphaBP </h3>
+				<p class="card-text">
+          <a style="padding-right: 1px;" href="https://github.com/FirstHandScientist/amp">AlphaBP</a>: a message passing algorithm.
+        </p>
+			</div>
+      <div class="card-body">
+				<h3 class="card-title"> EOTGM </h3>
+				<p class="card-text">
+          <a style="padding-right: 1px;" href="https://github.com/FirstHandScientist/eotgms">EOTGM/EOTGAN</a>: A generative model trained with optimal transport.
+        </p>
+			</div>
+
+
 		</ng-template>
 	</ngb-tab>
 
-	<ngb-tab title="Topic 1">
+
+	<ngb-tab title="Related Open-Source Tools">
 		<ng-template ngbTabContent>
+			<div class="card-body">
+				<h3 class="card-title"> <a href="http://edwardlib.org/">Pyro</a></h3>
+				<p class="card-text">
+        A Python library for probabilistic modeling, inference, and criticism.
+        </p>
+			</div>
+
 
 			<div class="card-body">
-
-				<h3 class="card-title">Research topic 1</h3>
-
-				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, [{{cite('conf1', 0)}}]
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non [{{cite('conf1', 0)}}]
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum [{{cite('art1', 0)}}].</p>
-
-				<ul class="list-group">
-					<li class="list-group-item p-2" *ngFor="let pub_data of ref_lists[0]; let i=index">
-						[{{i+1}}]<app-publication [pub_data]="pub_data"></app-publication>
-					</li>
-				</ul>
+				<h3 class="card-title"> <a href="https://pyro.ai/">Edward</a></h3>
+				<p class="card-text">
+          A universal probabilistic programming language (PPL) written in Python and supported by PyTorch on the backend.
+        </p>
 			</div>
-		</ng-template>
-	</ngb-tab>
 
-	<ngb-tab title="Topic 2">
-		<ng-template ngbTabContent>
 
-			<div class="card-body">
-
-				<h3 class="card-title">Research topic 2</h3>
-
-				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, [{{cite('conf2', 0)}}]
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non [{{cite('conf2', 0)}}]
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum [{{cite('art2', 0)}}].</p>
-
-				<ul class="list-group">
-					<li class="list-group-item p-2" *ngFor="let pub_data of ref_lists[1]; let i=index">
-						[{{i+1}}]<app-publication [pub_data]="pub_data"></app-publication>
-					</li>
-				</ul>
+      <div class="card-body">
+				<h3 class="card-title"> <a href="https://github.com/pgmpy/pgmpy">pgmpy</a></h3>
+				<p class="card-text">
+          A python library for working with Probabilistic Graphical Models.
+        </p>
 			</div>
+
+      <div class="card-body">
+				<h3 class="card-title"> <a href="https://probprog.github.io/anglican/">Anglican</a></h3>
+        <p class="card-text">
+          A probabilistic programming language integrated with Clojure and ClojureScript.
+				</p>
+			</div>
+
+
+
 		</ng-template>
 	</ngb-tab>
 
