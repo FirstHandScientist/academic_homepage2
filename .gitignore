@@ -42,3 +42,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# latex
+*.aux
+*.dvi
+*.log
+*.synctex.gz
+*.ps
