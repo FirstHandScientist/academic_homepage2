@@ -5,7 +5,7 @@
 			<div class="card-body">
 
 				<p class="card-text">
-          Research projects and associated software/code.
+          Recent research projects and associated code.
 				</p>
 			</div>
 
@@ -13,10 +13,11 @@
       <div class="card-body">
 				<h3 class="card-title"> RENN <a style="padding-right: 1px;" href="https://github.com/FirstHandScientist/renn"> repository </a></h3>
 				<p class="card-text">
-          An inference neural network for generic inference and learning of MRF.
           <a href="https://github.com/FirstHandScientist/renn">
             <img border="0" src="images/renn/figure-1.png" alt="name" height="256"/>
           </a>
+          <br/>
+          An inference neural network for generic inference and learning of Markov random fields (MRFs). The model minimizes region-based free energy directly by amortizing the beliefs of regions. The method is an alternative to the classical message-passing algorithm, e.g., belief propagation and generalized belief propagation. This implementation uses the PyTorch framework in python and supports inference with GPU.
         </p>
 			</div>
 
@@ -24,21 +25,25 @@
       <div class="card-body">
 				<h3 class="card-title"> GenHMM <a style="padding-right: 1px;" href="https://github.com/FirstHandScientist/genhmm">repository</a> </h3>
 				<p class="card-text">
-          A neural network based hidden Markov model.
+
           <a href="https://github.com/FirstHandScientist/genhmm">
             <img border="0" src="images/genhmm/figure-1.png" alt="name" height="256"/>
           </a>
           <!-- <img border="0" src="images/genhmm/figure-1.png" alt="name" width="304" height="228" /> -->
+          <br/>
+          A neural network based hidden Markov model. GenHMM is a generator-mixed (modeled by neural networks) hidden Markov model, which employs the expressive power of networks and meanwhile keeps the tractability of likelihood via introducing normalizing flows in the model. GenHMM supports comment probabilistic inference tasks of sequential or temporal signals. GenHMM can be learned from data within expectation maximization. Check out the application of GenHMM to <a href="https://arxiv.org/abs/1910.05744"> speech recognition </a> and <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9054635">sepsis detection </a> of infants.
         </p>
 			</div>
 
       <div class="card-body">
 				<h3 class="card-title"> GenMM <a style="padding-right: 1px;" href="https://github.com/FirstHandScientist/EM-GM">repository</a> </h3>
 				<p class="card-text">
-          A mixture of normalizing flow models within expectation maximization.
+
           <a href="https://github.com/FirstHandScientist/EM-GM">
           <img border="0" src="images/genmm/figure-1.png" alt="name" height="256"/>
           </a>
+          <br/>
+          GenMM is a mixture model of normalizing flows that can be learned within expectation maximization algorithm. GenMM allows the exact likelihood computation of evidence and efficient sample generation. The python implementation of the model is available in the repository.
         </p>
 			</div>
 
@@ -46,16 +51,18 @@
       <div class="card-body">
 				<h3 class="card-title"> AlphaBP <a style="padding-right: 1px;" href="https://github.com/FirstHandScientist/AlphaBP">repository</a> </h3>
 				<p class="card-text">
-          A message passing algorithm.
+
           <a href="https://github.com/FirstHandScientist/AlphaBP">
           <img border="0" src="images/alphaBP/figure-1.png" alt="name" height="256"/>
           </a>
+          <br/>
+          AlphaBP is a variant of the message-passing algorithm. It supports generic inference tasks for problems described by graphical models, which is an add to your toolbox of message-passing algorithms, e.g., belief propagation or sum-product. The repository above contains an implementation of the algorithm in python.
         </p>
 			</div>
       <div class="card-body">
 				<h3 class="card-title"> EOTGM <a style="padding-right: 1px;" href="https://github.com/FirstHandScientist/eotgms">repository</a> </h3>
 				<p class="card-text">
-          A generative model trained with optimal transport.
+          EOTGM is an implicit generative model, where probabilistic density function is not explicitly available. Entropy-regularized optimal transport (EOT) cost is employed in developing generative models to learn implicit distributions. In model learning, it is optional to either use EOT cost directly or use EOT cost iteratively in an adversarial game.
         </p>
 			</div>
 
