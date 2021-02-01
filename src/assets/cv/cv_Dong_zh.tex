@@ -60,8 +60,8 @@
 % Tables that can span several pages
 \usepackage{longtable}
 
-% Several biblographies
-\usepackage{bibunits}
+% Several biblographies[sectionbib/subsectionbib]
+\usepackage[subsectionbib]{bibunits}
 % chinese
 \usepackage[UTF8]{ctex}
 % Trademark symbol
@@ -135,14 +135,10 @@
 % ----------------------------------------------------------------------------------------
 
 \section{工作经历}
-\begin{tabular}{r|p{10cm}}
+\begin{tabular}{r|p{12cm}}
   \textsc{至今}  & 研究员, 贝叶斯模型和方法 \\
   \textsc{2020.11}  &{电气工程与计算机学院}  \\
 & 瑞典皇家理工学院，斯德哥尔摩\\
-  \cline{2-2}
-\textsc{2020.11} 	& 博士生（时限制合同员工）\\
-  \textsc{2016.12}     & {电气工程与计算机学院} \\
-                      & {瑞典皇家理工学院，斯德哥尔摩} \\
   \cline{2-2}
   \textsc{2020.1}  & 联合创始人、算法顾问 \\
 	\textsc{2018.1}& 人工智能系统方案设计、智能设备供应 \\
@@ -205,9 +201,9 @@
 \end{tabular}
 
 \subsection{近期项目经历}
-\begin{tabular}{r|p{12cm}}
+\begin{tabular}{r|p{13cm}}
 \textsc{2020} & 基于神经网络的概率图模型设计和应用\\
-\textsc{2019}& 项目参与单位：瑞典皇家理工学院，卡罗林斯卡医学院 \\
+\textsc{2019}& 项目参与单位：瑞典皇家理工学院，卡罗林斯卡学院 \\
               & 承担项目内容：基于神经网络的概率可追溯模型设计和应用，该项目整合最大期望算法、隐马尔可夫模型和基于flow的神经网络模型提出了新型模型和算法; 项目资源平台： \href{https://www.snic.se/}{Swedish National Infrastructure for Computing}（SNIC 2019/3-232)\\
 	& 项目完成应用与展示： \href{https://github.com/FirstHandScientist/genhmm}{语音识别}, \href{https://arxiv.org/pdf/1910.13904.pdf}{早产儿败血症检测}, \href{https://github.com/FirstHandScientist/classification-EM-GM}{最大似然图像生成与分类判决}\\
   \cline{2-2}
@@ -215,10 +211,12 @@
   \textsc{2019}  & Advanced Message Passing设计和应用\\
   \textsc{2018}& 项目参与单位：瑞典皇家理工学院，华为瑞典研究所。\\
               & 承担项目内容：低复杂度、高效率approximate belief propagation/message passing算法部署、算法设计、以及在MIMO中的应用。项目经费100万克朗+。\\
-	& 两名硕士研究生（Scotti, Torres）毕业论文依托于该项目,\textbf{所辅导学生论文获得ICML Workshop GRL＋创新应用提名};部分项目开源于\href{https://github.com/FirstHandScientist/amp}{github repository} \\
-  \multicolumn{1}{c}{} \\
+              & 两名硕士研究生（Scotti, Torres）毕业论文依托于该项目,\textbf{所辅导学生论文获得ICML Workshop GRL＋创新应用提名};部分项目开源于\href{https://github.com/FirstHandScientist/amp}{github repository} \\
+  \cline{2-2}
+  & 其他近期开源项目见\href{https://people.kth.se/~doli/#/research}{research\&development}\\
+  
 \end{tabular}
-%其他近期项目见个人页面\href{https://people.kth.se/~doli/#/research}{research&development}。
+
 
 % ----------------------------------------------------------------------------------------
 %	SCHOLARSHIPS AND ADDITIONAL INFO
@@ -267,38 +265,51 @@
 % ----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 % ----------------------------------------------------------------------------------------
+\section{科研论文}
+\begin{bibunit}[IEEEtran_Pol]
+  \renewcommand\refname{期刊}
+  \nocite{
+    liu2019discontinuous,
+    liu2018will,
+    liu2015bounds,
+    liu2014secondary,
+    wang2015rsh}
+  \footnotesize{\putbib[../bibfile]}
+\end{bibunit}
 
 \begin{bibunit}[IEEEtran_Pol]
-  \renewcommand\refname{科研论文}
+  \renewcommand\refname{会议}
   \nocite{
-    ghosh2020rebust,
-    liu2020region,
-    liu2020alpha,
     zuxing2020cdc,
     anubhad2020,
     andrea2020,
     liu2020powering,
     honore2020hidden,
     liu2020neural,
-    chatterjee2019ssfn,
-    liu2019discontinuous,
     liu2019entropy,
     liu2019alpha,
     liu2019dominant,
-    liu2018will,
-    liu2015bounds,
-    wang2015rsh,
     zhang2015effective,
   liu2015node,
   wang2015structural,
-  liu2014secondary,
   liuenergy,
   ren2015applying,
   ren2015spectram,
-  ren2015spectrum
-}
+  ren2015spectrum1}
   \footnotesize{\putbib[../bibfile]}
 \end{bibunit}
+
+\begin{bibunit}[IEEEtran_Pol]
+  \renewcommand\refname{Preprint}
+  \nocite{
+    ghosh2020rebust,
+    liu2020region,
+    liu2020alpha,
+    jing2020unfair,
+    chatterjee2019ssfn}
+  \footnotesize{\putbib[../bibfile]}
+\end{bibunit}
+
 \section{发明专利}
  X. Hu, \textbf{D. Liu}, T. Deng, Wireless communication method and apparatus, 覆盖国家：中国（CN108377536A），美国（US20190261448A1），欧盟（EP3528553A1），巴西（BR112019008777A2）。
   
@@ -342,7 +353,7 @@
 \begin{longtable}[H]{r|p{13.5cm}}
   \hspace{20pt} \textsc{2019} & 第五届中国“互联网+”大学生创新创业大赛国际赛道铜奖 \\
   
-  \textsc{2014} & 中国全国研究生数学建模竞赛一等奖，Top \textbf{$\mathbf{2.45\%}$ in 4900个队伍}\\
+  \textsc{2014} & 中国全国研究生数学建模竞赛一等奖，Top \textbf{$\mathbf{2.45\%}$(共4900支队伍)}\\
   
 \textsc{2012} & 沈阳市“福田杯”机器人设计竞赛二等奖(区域内寻物机器人的设计与制作)\\
   \textsc{2011} & 全国本科生电子设计竞赛辽宁赛区特等奖(简易的数字信号发生器、分析仪的设计与制作)\\
