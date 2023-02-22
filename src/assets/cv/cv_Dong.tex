@@ -33,7 +33,7 @@
 \usepackage[usenames,dvipsnames]{xcolor}
 
 % Several biblographies[sectionbib/subsectionbib]
-\usepackage[subsectionbib]{bibunits}
+\usepackage[sectionbib]{bibunits}
 
 % Margin specification
 \usepackage{fullpage}
@@ -90,9 +90,9 @@
 \section{Personal data}
 
 \begin{tabular}{rl}
-  \textsc{Address:} & Malvinas Vag 10, Stockholm, Sweden \\
+  % \textsc{Address:} & Malvinas Vag 10, Stockholm, Sweden \\
   \textsc{Phone:} & +460767103249 \\
-  \textsc{Email:} & \href{mailto:liu-dong@live.cn}{\nolinkurl{liu-dong@live.cn}}, \href{mailto:doli@kth.se}{\nolinkurl{doli@kth.se}} \\
+  \textsc{Email:} & \href{mailto:liu-dong@live.cn}{\nolinkurl{liu-dong@live.cn}}\\
   % \textsc{Google Scholar:} & \href{https://scholar.google.com/citations?user=eK9LoQMAAAAJ&hl=en}{\aiGoogleScholar}\\
   \textsc{Website:} & \href{https://firsthandscientist.github.io}{https://firsthandscientist.github.io}\\
 \end{tabular}
@@ -103,12 +103,30 @@
 
 \section{Work Experience}
 \begin{tabular}{r|p{13cm}}
-  \textsc{Present}  & Researcher on Bayesian models and methods, Department of Intelligent Systems \\
+  \textsc{Present}   & Topics: machine learning, information retrieval (product search), natural language processing\\
+  {}   & \textbullet Working on machine learning algorithms and models for Amazon Search \\
+  {}   & \textbullet My work powered the store launch of \href{https://www.amazon.com.be}{amazon.com.be}, \href{https://www.amazon.eg}{amazon.eg}\\
+  \textsc{2021 May}  & Amazon, Luxembourg.\\
+
+  \multicolumn{2}{c}{} \\
+  \textsc{2021 Apr}  & Researcher on Bayesian models and methods, Department of Intelligent Systems \\
   \textsc{2020 Nov}  & KTH Royal Institute of Technology, Stockholm, Sweden.\\
   \multicolumn{2}{c}{} \\
 
   \textsc{2016 Dec}  & Research engineer, standardization of radio access technology  \\
   \textsc{2016 Apr}  & Shanghai Research Institute, Huawei Technologies Co., Ltd \\
+\end{tabular}
+
+% ----------------------------------------------------------------------------------------
+% COMPUTER SKILLS
+% ----------------------------------------------------------------------------------------
+
+\section{Skill Set}
+
+\begin{tabular}{rp{12cm}}
+	Skills:  & Amazon Web Services (AWS), Apache Spark, VPC, Amazon Elastic MapReduce (EMR), AWS SageMaker, PyTorch, Docker Container, Search Engine Technology
+                       \vspace{5pt}\\
+	Programming:       & \textsc{Python, PySpark, Java, Bash, \LaTeX}  \vspace{5pt}\\
 \end{tabular}
 
 
@@ -120,7 +138,7 @@
 
 \begin{tabular}{r|p{13cm}}
 
-  \textsc{2020 Nov} 	& Ph.D. (temporary employee)\\
+  \textsc{2020 Nov} 	& Ph.D.\\
   \textsc{2016 Dec} 	& {Research in statistical models, Bayesian inference, machine learning} \\
                       & {Dissertation: \href{https://github.com/FirstHandScientist/phdthesis}{\textbf{Perspectives on Probabilistic Graphical Models}}}, \href{http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1476655&dswid=353}{KTH DIVA} \\
                       & { Information Science and Engineering, Department of Intelligent Systems
@@ -159,33 +177,20 @@
                      & Scholarship provided Kochi University of Technology.
 \end{tabular}
 
-% ----------------------------------------------------------------------------------------
-% COMPUTER SKILLS
-% ----------------------------------------------------------------------------------------
-
-\section{Practical skills (\href{https://github.com/FirstHandScientist}{\textit{GitHub Profile}})}
-
-\begin{tabular}{rp{12cm}}
-	Technical skills:  & I am a superuser. \\
-                     & Experience in the administration of Linux computational servers (2017-2020).
-                       \vspace{5pt}\\
-	Programming:       & \textsc{Python, Pytorch, Bash, C++ Matlab, \LaTeX}  \vspace{5pt}\\
-\end{tabular}
-
-\section{Research}
-\begin{tabular}{r|p{13cm}}
-\textsc{Interests} & Probabilistic graphical model design \\
-& General Bayesian inference and learning algorithm design \\% 通用贝叶斯推理/学习算法设计，置信度传播（belief propagation/message passing) \\
-& Time series model and algorithm design\\
-& Stochastic geometric, complex network\\
-& Application of above-mentioned models and algorithms
-\end{tabular}
+\section{Previous Academic Work}
+% \begin{tabular}{r|p{13cm}}
+% \textsc{Interests} & Probabilistic graphical model design \\
+% & General Bayesian inference and learning algorithm design \\% 通用贝叶斯推理/学习算法设计，置信度传播（belief propagation/message passing) \\
+% & Time series model and algorithm design\\
+% & Stochastic geometric, complex network\\
+% & Application of above-mentioned models and algorithms
+% \end{tabular}
 
 % Probabilistic graphical model design, belief propagation/message passing, Bayesian inference and learning technique/methods, sequential data models, machine learning, stochastic geometry and their applications (e.g., \href{https://github.com/FirstHandScientist/genhmm}{Speech Recognition}, \href{https://ieeexplore.ieee.org/abstract/document/9054635}{Sepsis Detection}, \href{https://github.com/FirstHandScientist/classification-EM-GM}{Bayesian Classifier}, \href{https://arxiv.org/abs/2007.05703}{MIMO detection}).
 
 % Check out \href{https://firsthandscientist.github.io/#/research}{research\&development} to see more about my recent projects. Recent papers at my \href{https://scholar.google.com/citations?hl=en&user=eK9LoQMAAAAJ&view_op=list_works&sortby=pubdate}{google scholar}.
 
-\subsection{Recent Projects}
+% \subsection*{Academic Projects}
 \begin{tabular}{r|p{13cm}}
 \textsc{2020} & Neural network based probabilistic graphical model design and application\\
   \textsc{2019} & Likelihood-tractable probabilistic graphical model design integrating modern neural models, inference and learning algorithm design of proposed models. Computational platform: \href{https://www.snic.se/}{Swedish National Infrastructure for Computing} (SNIC 2019/3-232)\\
@@ -206,7 +211,7 @@
 % ----------------------------------------------------------------------------------------
 
 \begin{bibunit}[IEEEtran_Pol]
-  \renewcommand\refname{Recent Publications (or see more at \href{https://scholar.google.com/citations?hl=en&user=eK9LoQMAAAAJ&view_op=list_works&sortby=pubdate}{my Scholar})}
+  \renewcommand\refname{Publications (\href{https://scholar.google.com/citations?hl=en&user=eK9LoQMAAAAJ&view_op=list_works&sortby=pubdate}{my Scholar})}
   \nocite{
     liu2020region,
     liu2020alpha,
@@ -235,13 +240,13 @@
   % ren2015spectram,
   % ren2015spectrum}
 
-\subsection{Patent}
+\section{Patent}
  X. Hu, \textbf{D. Liu}, T. Deng, Wireless communication method and apparatus, authorized regions: China (CN108377536A), USA (US20190261448A1), European (EP3528553A1), Brazil (BR112019008777A2).
 
 % ----------------------------------------------------------------------------------------
 %	SCHOLARSHIPS AND ADDITIONAL INFO
 % ----------------------------------------------------------------------------------------
-\subsection{Grants \& Scholarships}
+\section{Grants \& Scholarships}
 \begin{savenotes}
   \begin{longtable}{r|p{13cm}}
     % General Travel grant: 21500 SEK
@@ -469,37 +474,6 @@
 % ----------------------------------------------------------------------------------------
 % REFEREE
 % ----------------------------------------------------------------------------------------
-\section{References}
-\begin{longtable}[H]{r|p{13.5cm}}
-  Assoc. Prof. & School of Electrical Engineering and Computer Science\\
-  Ragnar Thobaben &Royal Institute of Technology (KTH), Sweden \\
-               & Office: Room C:738, Malvinas vag 10, Stockholm, SE-100 44, Sweden \\
-               & Email: ragnart@kth.se \\
-               & Phone: +4687908452 \\
-
-  \multicolumn{2}{c}{} \\
-  Assoc. Prof. & School of Electrical Engineering and Computer Science\\
-  Saikat Chatterjee &Royal Institute of Technology (KTH), Sweden \\
-               & Office: Malvinas vag 10, Stockholm, SE-100 44, Sweden \\
-               & Email: sach@kth.se \\
-               & Phone: +4687908478 \\
-
-  \multicolumn{2}{c}{} \\
-
-  Prof.  & School of Electrical Engineering and Computer Science \\
-  Mikael Skoglund &Royal Institute of Technology (KTH), Sweden \\
-               & Office: Room A:415, Malvinas vag 10, Stockholm, SE-100 44, Sweden \\
-               & Email: skoglund@kth.se \\
-               & Phone: +4687908430 \\
-
-  \multicolumn{2}{c}{} \\
-  Prof. & School of Electronics and Information Engineering \\
-  Erwu Liu &Tongji University, China \\
-               & Office: 4800 Cao'an Highway, Jiading, 201804 Shanghai, China\\
-               & Email: erwu.liu@ieee.org or erwuliu@tongji.edu.cn \\
-               & Phone: +8615800903275
-\end{longtable}
-
 
 
 \end{document}
