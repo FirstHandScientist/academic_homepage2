@@ -32,9 +32,8 @@
 
 
     <h4 class="mt-2">News</h4>
-    <ul class="list-group">
-        <li class="list-group-item p-2" *ngFor="let item of news_items.slice(0, news_number)" [innerHTML]=item></li>
-        <li class="list-group-item p-2 btn btn-sm text-left mt-1" style="color: #007bff; cursor: pointer;" *ngIf="news_number < news_items.length" (click)="news_number = news_number+5">Show more...</li>
+    <ul>
+        <li *ngFor="let item of news_items" [innerHTML]=item></li>
     </ul>
 
 </div>
