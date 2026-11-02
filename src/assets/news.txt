@@ -1,11 +1,4 @@
-11/2026: Presenting "Bridging Queries and Brands: Entity Linking for Large-Scale Product Search" at CIKM 2026, Rome
-10/2026: Paper accepted at REALM@EMNLP 2026: "Wiki-Talkie: A Multilingual Benchmark for Persona-based Agents"
-7/2026: Paper accepted at CIKM 2026 Applied Research Track: "Bridging Queries and Brands: Entity Linking for Large-Scale Product Search"
-4/2026: Paper accepted at ECIR 2026: "Iterative Reranking as a Compute-Scaling Method for LLM-Based Rankers"
-4/2026: Paper accepted at LID@ECIR 2026: "Hierarchical Multi-field Representations for Two-Stage E-commerce Retrieval"
-7/2025: Paper accepted at ACL 2025: "MEMERAG: A Multilingual End-to-End Meta-Evaluation Benchmark for RAG"
-5/2025: Paper accepted at EReL@MIR WWW 2025: "Multimodal Semantic Retrieval for Product Search"
-9/2019: Get IEEE SPS Travel Grant Award
-5/2019: News entry 7
-1/2019: News entry 6
-12/2018: News entry 5
+11/2026: Heading to Rome for CIKM 2026, where I'll present our work on linking search queries to brands in large-scale product search. Come say hi!
+10/2026: Our Wiki-Talkie paper was accepted at the REALM workshop at EMNLP 2026. It's a multilingual benchmark for persona-based agents in real online discussions, joint work with Dennis Fucci, Andrea Bacciu, Weronika Łajewska and Saab Mansour.
+10/2026: "Bridging Queries and Brands: Entity Linking for Large-Scale Product Search", with Sreyashi Nag, was accepted to the CIKM 2026 Applied Research Track.
+4/2026: Two papers at ECIR 2026. Tamara Czinczoll presented our study of iterative reranking as a way to scale compute for LLM-based rankers, and Niklas Freymuth presented hierarchical multi-field representations for two-stage e-commerce retrieval at the LID workshop.
