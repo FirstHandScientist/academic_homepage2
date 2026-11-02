@@ -4,11 +4,95 @@
 }
 
 /* Set link colors */
-a:link, a:visited, a:hover { 
+a:link, a:visited, a:hover {
   color: #428bca;
   cursor: pointer;
 }
 
 .container-fluid {
-  max-width: 920px;
+  max-width: 1140px;
+}
+
+/* ---------- Home page ---------- */
+.home {
+  padding-top: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Sidebar */
+.home .profile {
+  margin-bottom: 2rem;
+}
+
+.home .avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 3px solid #f2f2f2;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.home .profile-name {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.home .profile-role {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.home .profile-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.home .profile-links li {
+  margin-bottom: 0.45rem;
+}
+
+.home .profile-links fa-icon {
+  color: #555;
+  margin-right: 0.5rem;
+}
+
+.home .profile-links a,
+.home .profile-links a:link,
+.home .profile-links a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+.home .profile-links a:hover {
+  color: #1a4d8f;
+  text-decoration: underline;
+}
+
+/* Content */
+.home .content a,
+.home .content a:link,
+.home .content a:visited {
+  color: #1a4d8f;
+  text-decoration: underline;
+}
+
+.home .section-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.home .news li {
+  margin-bottom: 0.5rem;
+}
+
+.home .news-date {
+  font-weight: 600;
+  margin-right: 0.25rem;
 }
