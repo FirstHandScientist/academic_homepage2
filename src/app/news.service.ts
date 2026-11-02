@@ -13,7 +13,7 @@ export class NewsService {
 	constructor(private http: HttpClient) { }
 
 	public getNews(): Observable<string[]> {
-		return this.http.get('assets/news.txt', {responseType: 'text'})
+		return this.http.get('assets/news.txt?v=' + Date.now(), {responseType: 'text'})
 		.pipe(map(data => separate(data)));
 	}
 }
