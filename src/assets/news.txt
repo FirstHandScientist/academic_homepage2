@@ -1,3 +1,10 @@
+11/2026: Presenting "Bridging Queries and Brands: Entity Linking for Large-Scale Product Search" at CIKM 2026, Rome
+10/2026: Paper accepted at REALM@EMNLP 2026: "Wiki-Talkie: A Multilingual Benchmark for Persona-based Agents"
+7/2026: Paper accepted at CIKM 2026 Applied Research Track: "Bridging Queries and Brands: Entity Linking for Large-Scale Product Search"
+4/2026: Paper accepted at ECIR 2026: "Iterative Reranking as a Compute-Scaling Method for LLM-Based Rankers"
+4/2026: Paper accepted at LID@ECIR 2026: "Hierarchical Multi-field Representations for Two-Stage E-commerce Retrieval"
+7/2025: Paper accepted at ACL 2025: "MEMERAG: A Multilingual End-to-End Meta-Evaluation Benchmark for RAG"
+5/2025: Paper accepted at EReL@MIR WWW 2025: "Multimodal Semantic Retrieval for Product Search"
 9/2019: Get IEEE SPS Travel Grant Award
 5/2019: News entry 7
 1/2019: News entry 6
